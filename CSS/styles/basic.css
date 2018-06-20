@@ -1,106 +1,104 @@
 body{
-	background-color: #56ffff;
-	font-size: 25px;
-	margin: 0;
-	padding: 0;
+  background-color: #56ffff;
+  font-size: 25px;
 }
 .flex-container{
-	position: relative;
+  position: relative;
 }
 div.sub-flex{
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 .bottom{;
-	bottom: 0%;
-	position: fixed;
-	width: 100%;
-	height: 60px;
+  bottom: 0%;
+  position: fixed;
+  width: 100%;
+  height: 60px;
 }
 .center{
-	top: 50%;
+  top: 50%;
   position: fixed;
   width: 100%;
 }
 div.item{
-	flex-direction: column;
+  flex-direction: column;
 }
 .A{
-	text-align: center;
-	width: 35px;
-	height: 35px;
-	border-radius: 50%;
-	border: 1px solid black;
-	background-color: red;
-	line-height: 1.4;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 1px solid black;
+  background-color: red;
+  line-height: 1.4;
 }
 .B{
-	margin: 0 auto;
-	text-align: right;
-	width: 35px;
-	height: 35px;
-	border-radius: 20%;
-	border: 1px solid red;
-	background-color: yellow;
-	line-height: 1.4;
+  margin: 0 auto;
+  text-align: right;
+  width: 35px;
+  height: 35px;
+  border-radius: 20%;
+  border: 1px solid red;
+  background-color: yellow;
+  line-height: 1.4;
 }
 .C{
-	text-align: left;
-	width: 35px;
-	height: 35px;
-	background-color: blue;
-	line-height: 1.4;
+  text-align: left;
+  width: 35px;
+  height: 35px;
+  background-color: blue;
+  line-height: 1.4;
 }
 .D{
-	text-align: right;
-	width: 35px;
-	height: 35px;
-	background-color: green;
-	border-right: 5px solid blue;
-	line-height: 1.4;
+  text-align: right;
+  width: 35px;
+  height: 35px;
+  background-color: green;
+  border-right: 5px solid blue;
+  line-height: 1.4;
 }
 .E{
-	margin: 0 auto;
-	width: 70px;
-	height: 70px;
-	background-color: #e58714;
-	text-align:  center;
-	left:  50%;
-	line-height: 2.5;
+  margin: 0 auto;
+  width: 70px;
+  height: 70px;
+  background-color: #e58714;
+  text-align:  center;
+  left:  50%;
+  line-height: 2.5;
 }
 .F{
-	text-align: left;
-	width: 35px;
-	height: 35px;
-	background-color: #7f007f;
-	float:  right;
-	line-height: 1.4;
+  text-align: left;
+  width: 35px;
+  height: 35px;
+  background-color: #7f007f;
+  float:  right;
+  line-height: 1.4;
 }
 .G{
-	text-align: right;
-	width: 35px;
-	height: 35px;
-	color: green;
-	position: fixed;
-	bottom: 0px;
+  text-align: right;
+  width: 35px;
+  height: 35px;
+  color: green;
+  position: fixed;
+  bottom: 0px;
 }
 .H{
-	margin: 0 auto;
-	width: 35px;
-	height: 35px;
-	color: white;
-	background-color: black;
-	line-height: 1.4;
+  margin: 0 auto;
+  width: 35px;
+  height: 35px;
+  color: white;
+  background-color: black;
+  line-height: 1.4;
 }
 .I{
-	text-align: center;
-	width: 35px;
-	height: 35px;
-	color: red;
-	background-color: grey;
-	position: fixed;
-	bottom: 0px;
-	right: 0px;
-	line-height: 0;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  color: red;
+  background-color: grey;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  line-height: 0;
 }
