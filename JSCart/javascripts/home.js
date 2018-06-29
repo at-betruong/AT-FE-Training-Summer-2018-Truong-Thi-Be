@@ -49,47 +49,37 @@ var productList = [
 }
 ]
 var count = 0;
-// var id = 0;
 var totalCart = 0;
 var cart = {};
 var productsAddCart = [];
 const lenProduct = productList.length;
-// var lenCart;
-// var json;
-
 function addProductList() {
   //create tag <ul>
   var Ul = document.createElement("ul");
   Ul.setAttribute("class", "list-products");
   document.getElementById("page-main").appendChild(Ul);
-  
   for (var i = 0; i < lenProduct; i++) {
     //create tag li
     var Li = document.createElement("li");
     Li.setAttribute("id", "item-product-" + (i + 1));
-    
     //create tag image
     var img = document.createElement("img");
     img.setAttribute("class", "img-item");
     img.setAttribute("src", productList[i].pic);
-    
     //create tag div
     var divItem = document.createElement("div");
     divItem.setAttribute("class", "info-product");
-    divItem.setAttribute("id", "info-product-" + (i + 1));
-    
+    divItem.setAttribute("id", "info-product-" + (i + 1));    
     //create tag h2
     var H2 = document.createElement("h2");
     H2.setAttribute("class", "name-product");
     var contentH2 =document.createTextNode(productList[i].name);
-    H2.appendChild(contentH2);
-    
+    H2.appendChild(contentH2);  
     //create tag b
     var B = document.createElement("b");
     B.setAttribute("class", "price-item");
     var contentB =document.createTextNode(productList[i].price);
-    B.appendChild(contentB);
-    
+    B.appendChild(contentB);  
     //create button ADD TO CARD
     var btnAddCard = document.createElement("button");
     btnAddCard.setAttribute("id","btn-card-" + (i + 1));
@@ -106,13 +96,12 @@ function addProductList() {
     document.getElementById("item-product-" + (i + 1)).appendChild(btnAddCard);
   }
 }
-
 function initEventListener() {
   for (let i = 0; i < lenProduct; i++) {
-    document.getElementById("btn-card-" + (i+1)).addEventListener("click", function() {
+    document.getElementById("btn-card-" + (i + 1)).addEventListener("click", function() {
       var num = ++count;
       document.getElementById('amount').innerHTML = num;
-      document.getElementById("btn-card-" + (i+1)).disabled = true;
+      document.getElementById("btn-card-" + (i + 1)).disabled = true;
       cart = productList[i];    
       productsAddCart.push(cart);
     });
